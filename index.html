@@ -22,18 +22,75 @@
       </div>
     </nav>
     <div class="section">
-      <div class="before">
-        <h2>Before we get started</h2>
+      <div class="intro">
+        <h2>Introduction to Git Tutorial</h2>
+        <p>
+          Welcome to this introductory tutorial on Git! Here, you'll learn the
+          fundamental concepts and practical steps to get started with version
+          control using Git, manage your code with GitHub, and track your coding
+          time with Hackatime.
+        </p>
         <hr class="gradient-hr" />
         <!--add information about installing vscode to machine-->
       </div>
+      <div class="intro-to-github"></div>
+      <h3>Introduction to GitHub</h3>
+      <p>
+        GitHub is a web-based platform that uses Git for version control. It's a
+        central place where developers can store, manage, and collaborate on
+        their code projects.
+      </p>
       <div class="creating-repository">
-        <h2>Create your first repository in Github</h2>
+        <h3>What is a repository?</h3>
+        <p>A repository (often shortened to "repo") is like a project folder for your code. It contains all the files, folders, and revision history of your project. Think of it as a central place where all your project-related work is stored and organized. When you create a repository, you're essentially setting up a dedicated space for your project to live and be version-controlled.</p>
+        <h3>Creating a repository</h3>
+         <p>To create your first repository on GitHub:
+</p>
+  <ol>
+    <li><strong>Go to <a href="https://github.com" target="_blank">GitHub.com</a>:</strong> If you don't have an account, sign up for free.</li>
+    <li><strong>Click the "New" button:</strong> On the left sidebar of your GitHub dashboard, you'll see a green <em>"New"</em> button.</li>
+    <li><strong>Name your repository:</strong> Choose a descriptive name for your project (e.g., <code>my-first-git-project</code>, <code>website-tutorial</code>).</li>
+    <li><strong>Add a description (optional):</strong> Briefly explain what your project is about.</li>
+    <li><strong>Choose visibility:</strong> Select <em>"Public"</em> if you want anyone to see your code, or <em>"Private"</em> if you want to keep it to yourself or specific collaborators.</li>
+    <li><strong>Initialize with a README (recommended):</strong> Check the box to add a README file. This file is often used to describe your project.</li>
+    <li><strong>Click "Create repository":</strong> Your new repository will be created and ready for your code!</li>
+  </ol>
       </div>
+      <hr class="gradient-hr">
       <div class="VSCode">
-        <h2>VSCode</h2>
+        <h2>Introduction to VSCode</h2>
+        <p>VS Code (Visual Studio Code) is a free, open-source code editor developed by Microsoft. It's incredibly popular among developers for its versatility, extensive features, and vast ecosystem of extensions.</p>
+        <div class="installing-vscode">
+        <h3>How to install VSCode</h3>
+        <p>Once VSCode is installed, you can open your newly created GitHub repository locally:</p>
+
+  <h3>Clone the Repository</h3>
+  <ol>
+    <li>On your GitHub repository page, click the green <strong>"Code"</strong> button.</li>
+    <li>Copy the HTTPS URL.</li>
+    <li>Open your terminal or command prompt.</li>
+    <li>Navigate to the directory where you want to store your project:<br>
+      <code>cd Documents/CodingProjects</code>
+    </li>
+    <li>Type the following command and press Enter:<br>
+      <code>git clone [PASTE_YOUR_GITHUB_URL_HERE]</code><br>
+      This will download a copy of your repository to your local machine.
+    </li>
+  </ol>
+
+  <h3>Open in VSCode</h3>
+  <ol>
+    <li>Once the cloning is complete, open VSCode.</li>
+    <li>Go to <strong>File &gt; Open Folder...</strong> (or <strong>File &gt; Open...</strong> on some systems).</li>
+    <li>Navigate to the folder that was just created by the <code>git clone</code> command (it will have the same name as your repository) and click <strong>"Select Folder"</strong>.</li>
+  </ol>
+
+  <p>VSCode will open your repository, and you'll see its files in the Explorer sidebar.</p>
+</section>
+        </div>
         <div class="cloning-vscode">
-          <h3>Opening your project in VsCode</h3>
+          <h3>How to open your repository in VS Code</h3>
+          
         </div>
         <div class="hackatime-vscode">
           <h3>Installing Hackatime on VSCode</h3>
@@ -55,6 +112,7 @@
       <div class="nextup">
         <h2>Other things you can learn!</h2>
       </div>
+    </div>
     </div>
   </body>
 </html>
