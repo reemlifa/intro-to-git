@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/2.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Intro to Git</title>
   </head>
 
@@ -11,18 +16,112 @@
     <div class="background">
       <img src="assets/images/1.png" alt="background image" />
     </div>
+
     <nav>
-      <h1>Intro to Git</h1>
-      <a href="#before">Before we get started</a>
-      <a href="#before">Before we get started</a>
-      <a href="#before">Before we get started</a>
+      <div class="title">
+        <img src="assets/images/2.png" alt="logo" />
+        <h1>Intro to Git</h1>
+      </div>
+      <div class="links">
+        <ul>
+          <li class="nav-item">
+            <a href="#github">Introduction to GitHub</a>
+            <ul>
+              <li class="sub-nav-item">
+                <a href="#what-is-repo">What is a repository</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#create-repo">Creating your first repository</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#vscode">Introduction to VSCode</a>
+            <ul>
+              <li class="sub-nav-item">
+                <a href="#what-is-vscode">What is VSCode</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#install-vscode">How to install VSCode</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#open-repo-vscode"
+                  >How to open your repository in VS Code</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#git">Introduction to Git</a>
+            <ul>
+              <li class="sub-nav-item">
+                <a href="#what-is-git">What is Git</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#install-git">Installing Git</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#intro-hackatime">Introduction to Hackatime</a>
+            <ul class="nav-section" id="hackatime-intro">
+              <li class="sub-nav-item">
+                <a href="#what-is-hackatime">What is Hackatime</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#hackatime-vs-wakatime"
+                  >Difference between it and Wakatime</a
+                >
+              </li>
+              <li class="sub-nav-item">
+                <a href="#signing-into-hackatime">Signing into Hackatime</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#getting-api-key">Getting your API key</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#installing-wakatime">Installing Wakatime</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#check-for-correct">Check for correct</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#committing-code">Committing your code</a>
+            <ul class="nav-section" id="commit-steps">
+              <li class="sub-nav-item">
+                <a href="#writing-code">Writing some code and seeing changes</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#committing-code-step">Committing the code</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#pushing-code">Pushing the code</a>
+              </li>
+              <li class="sub-nav-item">
+                <a href="#checking-repo">Checking the repository</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
       <div class="footer">
         <h2>made with 💖 by Reem</h2>
-        <h3>check out the github repo <a href="link">here!</a></h3>
+        <h3>
+          check out the GitHub repo
+          <a href="https://github.com/reemlifa/intro-to-git">here!</a>
+        </h3>
       </div>
     </nav>
-    <div class="section">
-      <div class="intro">
+
+    <main class="section">
+      <div class="intro" id="intro">
         <h2>Introduction to Git Tutorial</h2>
         <p>
           Welcome to this introductory tutorial on Git! Here, you'll learn the
@@ -31,88 +130,133 @@
           time with Hackatime.
         </p>
         <hr class="gradient-hr" />
-        <!--add information about installing vscode to machine-->
       </div>
-      <div class="intro-to-github"></div>
-      <h3>Introduction to GitHub</h3>
-      <p>
-        GitHub is a web-based platform that uses Git for version control. It's a
-        central place where developers can store, manage, and collaborate on
-        their code projects.
-      </p>
+
+      <div class="intro-to-github">
+        <h3>Introduction to GitHub</h3>
+        <p>
+          GitHub is a web-based platform that uses Git for version control. It's
+          a central place where developers can store, manage, and collaborate on
+          their code projects.
+        </p>
+      </div>
+
       <div class="creating-repository">
         <h3>What is a repository?</h3>
-        <p>A repository (often shortened to "repo") is like a project folder for your code. It contains all the files, folders, and revision history of your project. Think of it as a central place where all your project-related work is stored and organized. When you create a repository, you're essentially setting up a dedicated space for your project to live and be version-controlled.</p>
+        <p>
+          A repository (often shortened to "repo") is like a project folder for
+          your code. It contains all the files, folders, and revision history of
+          your project.
+        </p>
         <h3>Creating a repository</h3>
-         <p>To create your first repository on GitHub:
-</p>
-  <ol>
-    <li><strong>Go to <a href="https://github.com" target="_blank">GitHub.com</a>:</strong> If you don't have an account, sign up for free.</li>
-    <li><strong>Click the "New" button:</strong> On the left sidebar of your GitHub dashboard, you'll see a green <em>"New"</em> button.</li>
-    <li><strong>Name your repository:</strong> Choose a descriptive name for your project (e.g., <code>my-first-git-project</code>, <code>website-tutorial</code>).</li>
-    <li><strong>Add a description (optional):</strong> Briefly explain what your project is about.</li>
-    <li><strong>Choose visibility:</strong> Select <em>"Public"</em> if you want anyone to see your code, or <em>"Private"</em> if you want to keep it to yourself or specific collaborators.</li>
-    <li><strong>Initialize with a README (recommended):</strong> Check the box to add a README file. This file is often used to describe your project.</li>
-    <li><strong>Click "Create repository":</strong> Your new repository will be created and ready for your code!</li>
-  </ol>
+        <p>To create your first repository on GitHub:</p>
+        <ol>
+          <li>
+            <strong
+              >Go to
+              <a href="https://github.com" target="_blank">GitHub.com</a
+              >:</strong
+            >
+            If you don't have an account, sign up for free.
+          </li>
+          <li>
+            <strong>Click the "New" button:</strong> You'll see a green
+            <em>"New"</em> button.
+          </li>
+          <li>
+            <strong>Name your repository:</strong> Choose a descriptive name
+            (e.g., <code>my-first-git-project</code>).
+          </li>
+          <li>
+            <strong>Add a description (optional):</strong> Explain what your
+            project is about.
+          </li>
+          <li>
+            <strong>Choose visibility:</strong> Select <em>"Public"</em> or
+            <em>"Private"</em>.
+          </li>
+          <li>
+            <strong>Initialize with a README:</strong> Recommended for
+            describing your project.
+          </li>
+          <li>
+            <strong>Click "Create repository":</strong> Your new repo is ready!
+          </li>
+        </ol>
       </div>
-      <hr class="gradient-hr">
-      <div class="VSCode">
+
+      <hr class="gradient-hr" />
+
+      <div class="VSCode" id="vscode">
         <h2>Introduction to VSCode</h2>
-        <p>VS Code (Visual Studio Code) is a free, open-source code editor developed by Microsoft. It's incredibly popular among developers for its versatility, extensive features, and vast ecosystem of extensions.</p>
+        <p>
+          VS Code is a free, open-source code editor from Microsoft. It's
+          popular for its versatility, features, and extensions.
+        </p>
+
         <div class="installing-vscode">
-        <h3>How to install VSCode</h3>
-        <p>Once VSCode is installed, you can open your newly created GitHub repository locally:</p>
+          <h3>How to install VSCode</h3>
+          <p>Once VSCode is installed, open your GitHub repo locally:</p>
 
-  <h3>Clone the Repository</h3>
-  <ol>
-    <li>On your GitHub repository page, click the green <strong>"Code"</strong> button.</li>
-    <li>Copy the HTTPS URL.</li>
-    <li>Open your terminal or command prompt.</li>
-    <li>Navigate to the directory where you want to store your project:<br>
-      <code>cd Documents/CodingProjects</code>
-    </li>
-    <li>Type the following command and press Enter:<br>
-      <code>git clone [PASTE_YOUR_GITHUB_URL_HERE]</code><br>
-      This will download a copy of your repository to your local machine.
-    </li>
-  </ol>
+          <h3>Clone the Repository</h3>
+          <ol>
+            <li>
+              Click the green <strong>"Code"</strong> button on your GitHub
+              repo.
+            </li>
+            <li>Copy the HTTPS URL.</li>
+            <li>Open your terminal or command prompt.</li>
+            <li>
+              Navigate to your project folder:
+              <code>cd Documents/CodingProjects</code>
+            </li>
+            <li>Run: <code>git clone [PASTE_YOUR_GITHUB_URL_HERE]</code></li>
+          </ol>
 
-  <h3>Open in VSCode</h3>
-  <ol>
-    <li>Once the cloning is complete, open VSCode.</li>
-    <li>Go to <strong>File &gt; Open Folder...</strong> (or <strong>File &gt; Open...</strong> on some systems).</li>
-    <li>Navigate to the folder that was just created by the <code>git clone</code> command (it will have the same name as your repository) and click <strong>"Select Folder"</strong>.</li>
-  </ol>
-
-  <p>VSCode will open your repository, and you'll see its files in the Explorer sidebar.</p>
-</section>
+          <h3>Open in VSCode</h3>
+          <ol>
+            <li>Open VSCode.</li>
+            <li>Go to <strong>File &gt; Open Folder...</strong></li>
+            <li>Select the folder that was just cloned.</li>
+          </ol>
+          <p>You should now see your files in the Explorer sidebar.</p>
         </div>
+
         <div class="cloning-vscode">
           <h3>How to open your repository in VS Code</h3>
-          
+          <!-- Add details here if needed -->
         </div>
+
         <div class="hackatime-vscode">
           <h3>Installing Hackatime on VSCode</h3>
+          <!-- Add Hackatime instructions -->
         </div>
+
         <div class="commiting-vscode">
-          <h3>Commiting your code using Terminal</h3>
+          <h3>Committing your code using Terminal</h3>
+          <!-- Add commit steps -->
         </div>
       </div>
-      <div class="Codespaces">
+
+      <div class="Codespaces" id="codespaces">
         <h2>Codespaces</h2>
       </div>
+
       <div class="openingwith-codespaces">
         <h3>Opening your project in Codespaces</h3>
       </div>
+
       <div class="hackatime-codespaces">
-        <h3>Installing Hackatime in CodeSpaces</h3>
+        <h3>Installing Hackatime in Codespaces</h3>
       </div>
-      <div class="gui-codespaces"><h3>Commiting using the GUI</h3></div>
-      <div class="nextup">
+
+      <div class="gui-codespaces">
+        <h3>Committing using the GUI</h3>
+      </div>
+
+      <div class="nextup" id="nextup">
         <h2>Other things you can learn!</h2>
       </div>
-    </div>
-    </div>
+    </main>
   </body>
 </html>

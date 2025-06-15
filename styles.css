@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "assets/fonts/Mona Sans", Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -10,7 +9,29 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("assets/fonts/JetBrainsMono/JetBrainsMono-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
 html,
 body {
   height: 100%;
@@ -25,6 +46,7 @@ body {
 body {
   display: flex;
   min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
 }
 
 nav {
@@ -35,10 +57,14 @@ nav {
   height: auto;
   width: 20%;
   min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
 }
 
 nav h1 {
   margin-top: 10%;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 5%;
 }
 
 nav > h1,
@@ -47,6 +73,22 @@ nav > a {
   margin-right: auto;
   margin-top: 10%;
   text-align: left;
+}
+
+nav h2 {
+  font-weight: 300;
+}
+
+nav > ul > li > a {
+  font-weight: 700;
+}
+
+nav ul ul li a {
+  font-weight: 300;
+}
+
+nav ul {
+  margin-bottom: 20px;
 }
 
 .section {
@@ -55,44 +97,25 @@ nav > a {
 }
 
 nav .footer {
-  margin-top: auto;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 3px;
+  margin: auto auto 10% auto;
+  text-align: center;
 }
 
 nav .footer h2 {
-  font-size: 20px;
-  font-weight: light;
-  text-align: center;
-}
-
-nav .footer h3 {
   font-size: 15px;
-  font-weight: lighter;
   text-align: center;
 }
 
-html,
-body {
-  height: 100%;
+nav .footer h3,
+nav .footer a {
+  font-size: 10px;
+  text-align: center;
 }
 
 .background {
   z-index: -1;
   background-size: cover;
-}
-
-body {
-  display: flex;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  background-color: #25272b;
-  height: 100%;
-  width: 20%;
 }
 
 nav h1 {
@@ -107,21 +130,42 @@ nav > a {
   text-align: left;
 }
 
-nav .footer {
-  margin-top: auto;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav .footer h2 {
-  font-size: 20px;
-  font-weight: light;
-  text-align: center;
-}
-
-nav .footer h3 {
+.nav-item {
   font-size: 15px;
-  font-weight: lighter;
-  text-align: center;
+}
+
+.sub-nav-item {
+  font-size: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.title img {
+  max-width: 20%;
+}
+
+.gradient-hr {
+  height: 4px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #aa20cd,
+    #2f0479,
+    #000240,
+    #2f0479,
+    #aa20cd
+  );
+}
+
+nav h1,
+a {
+  text-decoration: wavy underline rgb(156, 31, 156);
+  text-decoration-thickness: 1px;
 }
