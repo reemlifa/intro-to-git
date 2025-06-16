@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   color: white;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -67,18 +68,6 @@ nav h1 {
   margin-right: 5%;
 }
 
-nav > h1,
-nav > a {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  text-align: left;
-}
-
-nav h2 {
-  font-weight: 300;
-}
-
 nav > ul > li > a {
   font-weight: 700;
 }
@@ -118,10 +107,6 @@ nav .footer a {
   background-size: cover;
 }
 
-nav h1 {
-  margin-top: 10%;
-}
-
 nav > h1,
 nav > a {
   margin-left: auto;
@@ -135,7 +120,8 @@ nav > a {
 }
 
 .sub-nav-item {
-  font-size: 10px;
+  font-size: 12px;
+  padding: 1px;
 }
 
 .title {
@@ -166,6 +152,11 @@ nav > a {
 
 nav h1,
 a {
+  text-decoration: none;
+}
+
+nav h1:hover,
+a:hover {
   text-decoration: wavy underline rgb(156, 31, 156);
   text-decoration-thickness: 1px;
 }
